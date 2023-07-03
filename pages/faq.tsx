@@ -4,11 +4,11 @@ import React from "react";
 import type { CollapseProps } from "antd";
 
 export default function Faq() {
-  const onChange = (key) => {
-    console.log(key);
-  };
+  // const onChange = (key) => {
+  //   console.log(key);
+//}
   return (
-    <div className="max-w-5xl m-auto">
+    <div className="max-w-5xl m-auto px-4 lg:px-0">
       <div className="py-24">
         <div className="text-3xl text-center mb-3">FAQ</div>
         <Collapse
@@ -134,7 +134,7 @@ export default function Faq() {
                 <p>
                   The platform utilizes advanced algorithms and real-time data
                   to generate insurance quotes. While we strive to provide
-                  accurate estimates, it's important to note that insurance
+                  accurate estimates, it&apos;s important to note that insurance
                   premiums are subject to various factors and may change based
                   on additional information or specific circumstances. Also note
                   that most of the quotes on the Smart Insurance platform are
@@ -158,7 +158,7 @@ export default function Faq() {
                 <p>
                   For any inquiries or assistance, you can reach out to our
                   customer support team through various channels. You can find
-                  the contact information on the Smart Insurance platform's
+                  the contact information on the Smart Insurance platform&apos;s
                   website, including phone numbers, email addresses, and live
                   chat options. Our dedicated support staff is available to help
                   address your concerns and provide guidance.
@@ -226,9 +226,9 @@ export default function Faq() {
                   digitizing and automating many aspects. In the event of a
                   claim, you can submit the necessary information and supporting
                   documents through the platform. Our system will initiate a
-                  review process and provide updates on the claim's progress. We
-                  strive to ensure a smooth and efficient claims experience for
-                  our customers.
+                  review process and provide updates on the claim&apos;s
+                  progress. We strive to ensure a smooth and efficient claims
+                  experience for our customers.
                 </p>
               ),
               showArrow: false,
@@ -271,12 +271,13 @@ export default function Faq() {
               children: (
                 <p>
                   We value your feedback and suggestions to improve our services
-                  further. You can provide feedback through the platform's
+                  further. You can provide feedback through the platform&apos;s
                   website, email or contact our customer support team directly.
                   We appreciate your input and are committed to continually
                   enhancing the Smart Insurance platform based on user feedback.
                   If you have any further questions or require assistance,
-                  please don't hesitate to reach out to our support team. <br />
+                  please do not hesitate to reach out to our support team.{" "}
+                  <br />
                   Email: support@smartinsurancegh.com <br />
                   Phone: +233 50 251 4699 <br />
                   +233 24 227 0895 <br />

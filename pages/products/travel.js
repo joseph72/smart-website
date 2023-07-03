@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Travel() {
   return (
-    <div className="max-w-5xl m-auto">
+    <div className="max-w-5xl m-auto px-4 lg:px-0">
       <div className="py-24 prose lg:prose-xl">
         <h1 className=" mb-3">Travel Insurance</h1>
         <p>

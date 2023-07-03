@@ -52,8 +52,10 @@ export default function Navbar() {
                   </li>
                 </Link> */}
                 <Link href="/">
-                  <li className="nav-items">
-                    <div className="nav-link">HOME</div>
+                  <li className="nav-items nav-link">
+                    <div className={router.pathname == "/" ? "active " : ""}>
+                      HOME
+                    </div>
                   </li>
                 </Link>
                 <Link href="/products">
@@ -67,14 +69,21 @@ export default function Navbar() {
                     </div>
                   </li>
                 </Link>
+
                 <Link href="/faq">
-                  <li className="nav-items">
-                    <div className="nav-link">FAQ</div>
+                  <li className="nav-items nav-link">
+                    <div className={router.pathname == "/faq" ? "active " : ""}>
+                      FAQ
+                    </div>
                   </li>
                 </Link>
                 <Link href="/contact">
-                  <li className="nav-items">
-                    <div className="nav-link">CONTACT US</div>
+                  <li className="nav-items nav-link">
+                    <div
+                      className={router.pathname == "/contact" ? "active " : ""}
+                    >
+                      CONTACT US
+                    </div>
                   </li>
                 </Link>
                 <li className="nav-items">

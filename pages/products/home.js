@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="max-w-5xl m-auto">
+    <div className="max-w-5xl m-auto px-4 lg:px-0">
       <div className=" prose lg:prose-xl py-24">
         <h1 className="  mb-3">Home Insurance</h1>
         <p>
@@ -25,8 +25,8 @@ export default function Home() {
           policy provides reimbursement for the actual cost of renting a
           suitable alternative accommodation during the reinstatement period (up
           to a maximum of 12 months). The amount is capped at ten percent of the
-          property's total value per year, or a proportional monthly portion
-          thereof.
+          property&apos;s total value per year, or a proportional monthly
+          portion thereof.
         </p>
       </div>
     </div>

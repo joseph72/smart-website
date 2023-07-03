@@ -2,7 +2,7 @@ import React from "react";
 import { products } from "../../db";
 export default function Motor() {
   return (
-    <div className="max-w-5xl m-auto">
+    <div className="max-w-5xl m-auto px-4 lg:px-0">
       <div className="prose lg:prose-xl py-24">
         <h1 className=" mb-3">Motor Insurance</h1>
         <p>
@@ -18,8 +18,8 @@ export default function Motor() {
           death, or damage to their property. The minimum limit for third-party
           property damage is currently GH¢7000, but it can be increased upon
           request. Bodily injury claims will be calculated as per the National
-          Insurance Commission's Limits on Motor Injury and Death Claims (CAP
-          2021). Third Party, Fire and Theft In addition to the standard
+          Insurance Commission&apos;s Limits on Motor Injury and Death Claims
+          (CAP 2021). Third Party, Fire and Theft In addition to the standard
           coverage provided by Third Party Motor Insurance, this policy extends
           protection to include theft and fire incidents involving your vehicle.
           Comprehensive Coverage The comprehensive motor policy offers extensive

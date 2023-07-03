@@ -188,7 +188,10 @@ export default function Main() {
                 <div className="text-xl m-title">
                   Motor <br /> Insurance
                 </div>
-                <button className="btn btn-1 "       onClick={() => router.push("/products/motor")}>
+                <button
+                  className="btn btn-1 "
+                  onClick={() => router.push("/products/motor")}
+                >
                   <div className="flex space-x-3 items-center">
                     <span>Learn More</span>
                     <img
@@ -241,7 +244,10 @@ export default function Main() {
                   Home <br />
                   Insurance
                 </div>
-                <button className="btn btn-1"       onClick={() => router.push("/products/home")}>
+                <button
+                  className="btn btn-1"
+                  onClick={() => router.push("/products/home")}
+                >
                   <div className="flex space-x-3 items-center">
                     <span>Learn More</span>
                     <img
@@ -296,7 +302,10 @@ export default function Main() {
                 <div className="text-xl m-title">
                   Personal <br /> Accident
                 </div>
-                <button className="btn btn-1"       onClick={() => router.push("/products/pa")}>
+                <button
+                  className="btn btn-1"
+                  onClick={() => router.push("/products/pa")}
+                >
                   <div className="flex space-x-3 items-center">
                     <span>Learn More</span>
                     <img
@@ -352,7 +361,10 @@ export default function Main() {
                   Travel <br />
                   Insurance
                 </div>
-                <button className="btn btn-1"       onClick={() => router.push("/products/travel")}>
+                <button
+                  className="btn btn-1"
+                  onClick={() => router.push("/products/travel")}
+                >
                   <div className="flex space-x-3 items-center">
                     <span>Learn More</span>
                     <img
@@ -389,12 +401,12 @@ export default function Main() {
               instant insurance under 5 minutes
             </div>
             <div className="ajy-body-1">
-              Protecting You in Just 5 Minutes!", embodies the core value
+              Protecting You in Just 5 Minutes&quot;, embodies the core value
               proposition of our Smart insurance service, emphasizing speed,
-              convenience, and immediate coverage. In today's fast-paced world,
-              we understand that time is of the essence, and that's why we've
-              designed a seamless insurance experience that takes just minutes
-              to secure.
+              convenience, and immediate coverage. In today&apos;s fast-paced
+              world, we understand that time is of the essence, and that is why
+              we have designed a seamless insurance experience that takes just
+              minutes to secure.
             </div>
             <div className="momo-grid">
               <div className="momo-grid-items">

@@ -6,12 +6,12 @@ import Link from "next/link";
 
 export default function Products({ item }) {
   return (
-    <div className="max-w-5xl m-auto py-24">
+    <div className="max-w-5xl m-auto py-24 px-4 lg:px-0">
       <div className="text-3xl text-center mb-3 uppercase">{"Products"}</div>
 
       <div className="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full">
         <div className="overflow-hidden bg-white rounded shadow">
-          <Link href={`/products/motor`} className="relative">
+          <Link href="/products/motor" className="relative">
             <div title="" className="block aspect-w-4 aspect-h-3">
               <img
                 className="object-cover w-full h-[13rem] border-b-gray-200 border"
@@ -40,15 +40,15 @@ export default function Products({ item }) {
                 or damage to their property. The minimum limit for third-party
                 property damage is currently GH¢7000, but it can be increased
                 upon request. Bodily injury claims will be calculated as per the
-                National Insurance Commission's Limits on Motor Injury and Death
-                Claims (CAP 2021). Third Party, Fire and Theft In addition to
-                the standard coverage provided by Third Party Motor Insurance,
-                this policy extends protection to include theft and fire
-                incidents involving your vehicle. Comprehensive Coverage The
-                comprehensive motor policy offers extensive coverage, including
-                liability protection towards third parties, damage to your own
-                vehicle, accidental collision or overturning, fire, external
-                explosion, self-ignition or lightning, theft, burglary,
+                National Insurance Commission&apos;s Limits on Motor Injury and
+                Death Claims (CAP 2021). Third Party, Fire and Theft In addition
+                to the standard coverage provided by Third Party Motor
+                Insurance, this policy extends protection to include theft and
+                fire incidents involving your vehicle. Comprehensive Coverage
+                The comprehensive motor policy offers extensive coverage,
+                including liability protection towards third parties, damage to
+                your own vehicle, accidental collision or overturning, fire,
+                external explosion, self-ignition or lightning, theft, burglary,
                 house-breaking, malicious acts, flood, storm, earthquake, riot,
                 strike, civil commotion, and property damage. It also covers
                 injury and death to third parties for which you may be legally
@@ -94,8 +94,8 @@ export default function Products({ item }) {
                 damage, the policy provides reimbursement for the actual cost of
                 renting a suitable alternative accommodation during the
                 reinstatement period (up to a maximum of 12 months). The amount
-                is capped at ten percent of the property's total value per year,
-                or a proportional monthly portion thereof.
+                is capped at ten percent of the property&apos;s total value per
+                year, or a proportional monthly portion thereof.
               </span>
             </div>
           </Link>

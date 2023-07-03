@@ -3,11 +3,11 @@ import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import { useMemo } from "react";
 
 export default function Contact() {
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-  });
+  // const { isLoaded } = useLoadScript({
+  //   googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+  // });
 
-  if (!isLoaded) return <div>Loading...</div>;
+  // if (!isLoaded) return <div>Loading...</div>;
 
   return (
     <div className="max-w-5xl m-auto">
@@ -40,16 +40,16 @@ export default function Contact() {
     </div>
   );
 }
-function Map() {
-  const center = useMemo(() => ({ lat: 5.6331912, lng: -0.1764908 }), []);
+// function Map() {
+//   const center = useMemo(() => ({ lat: 5.6331912, lng: -0.1764908 }), []);
 
-  return (
-    <GoogleMap
-      zoom={10}
-      center={center}
-      mapContainerClassName="h-[24rem] w-full"
-    >
-      <Marker position={center} />
-    </GoogleMap>
-  );
-}
+//   return (
+//     <GoogleMap
+//       zoom={10}
+//       center={center}
+//       mapContainerClassName="h-[24rem] w-full"
+//     >
+//       <Marker position={center} />
+//     </GoogleMap>
+//   );
+// }

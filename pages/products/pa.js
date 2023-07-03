@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Personal() {
   return (
-    <div className="max-w-5xl m-auto">
+    <div className="max-w-5xl m-auto px-4 lg:px-0">
       <div className="prose lg:prose-xl py-24">
         <h1 className=" mb-3">Personal Accident Insurance</h1>
         <p>
