@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import { Button, Drawer } from "antd";
-import Image from "next/image";
-import Logo from "../public/logo.png";
+import logo from "../public/logo.svg";
 import bar from "../public/bars-solid.svg";
 import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
 
   const showDrawer = () => {
     setOpen(true);
@@ -24,17 +25,15 @@ export default function Navbar() {
           <div className="nav-brand">
             <Link href="/">
               <div className="logo">
-                <Image width={125} height={45} src={Logo} alt="" />
+                <img className="object-contain   h-11" src="/logo.png" alt="" />
               </div>
             </Link>
           </div>
           <div className=" open">
-            <Image
+            <img
               onClick={showDrawer}
               className="w-7 cursor-pointer lg:hidden"
-              width={125}
-              height={45}
-              src={bar}
+              src="/bars-solid.svg"
               alt=""
             />
             <Drawer placement="left" onClose={onClose} open={open}>
@@ -42,22 +41,42 @@ export default function Navbar() {
                 <div className="menu-icons closed">
                   <i className="icon ion-md-close"></i>
                 </div>
-                <Link href="#insure">
+                {/* <Link href="/#insure">
                   <li className="nav-items">
                     <div className="nav-link current">Insure</div>
                   </li>
                 </Link>
-                <Link href="#about">
+                <Link href="/#about">
                   <li className="nav-items">
                     <div className="nav-link">About</div>
                   </li>
+                </Link> */}
+                <Link href="/">
+                  <li className="nav-items">
+                    <div className="nav-link">HOME</div>
+                  </li>
                 </Link>
-                <Link href="">
+                <Link href="/products">
+                  <li className="nav-items nav-link">
+                    <div
+                      className={
+                        router.pathname == "/products" ? "active " : ""
+                      }
+                    >
+                      PRODUCTS
+                    </div>
+                  </li>
+                </Link>
+                <Link href="/faq">
                   <li className="nav-items">
                     <div className="nav-link">FAQ</div>
                   </li>
                 </Link>
-
+                <Link href="/contact">
+                  <li className="nav-items">
+                    <div className="nav-link">CONTACT US</div>
+                  </li>
+                </Link>
                 <li className="nav-items">
                   <div className="barrier"></div>
                 </li>
@@ -79,19 +98,46 @@ export default function Navbar() {
             <div className="menu-icons closed">
               <i className="icon ion-md-close"></i>
             </div>
-            <Link href="#insure">
+            {/* <a href="#insure">
               <li className="nav-items">
                 <div className="nav-link current">Insure</div>
               </li>
-            </Link>
-            <Link href="#about">
+            </a>
+
+            <a href="#about">
               <li className="nav-items">
                 <div className="nav-link">About</div>
               </li>
+            </a> */}
+            <Link href="/">
+              <li className="nav-items nav-link">
+                <div className={router.pathname == "/" ? "active " : ""}>
+                  HOME
+                </div>
+              </li>
             </Link>
-            <Link href="">
-              <li className="nav-items">
-                <div className="nav-link">FAQ</div>
+            <Link href="/products">
+              <li className="nav-items nav-link">
+                <div
+                  className={router.pathname == "/products" ? "active " : ""}
+                >
+                  PRODUCTS
+                </div>
+              </li>
+            </Link>
+
+            <Link href="/faq">
+              <li className="nav-items nav-link">
+                <div className={router.pathname == "/faq" ? "active " : ""}>
+                  FAQ
+                </div>
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li className="nav-items nav-link">
+                <div className={router.pathname == "/contact" ? "active " : ""}>
+                  CONTACT US
+                </div>
               </li>
             </Link>
             <li className="nav-items">

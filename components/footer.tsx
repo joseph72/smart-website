@@ -1,25 +1,21 @@
-import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 export default function Footer() {
+  const date = new Date();
+  const fullYear = date.getFullYear();
   return (
     <div>
       <footer className="bg-[#F6F6F6] pt-20 pb-8">
         <div className=" px-4 md:px-[5%] flex flex-col text-center md:text-start gap-4 place-items-center md:place-items-start md:flex-row w-full md:gap-16">
           <div className="logo-container grow text-center grid place-items-center md:place-items-start md:text-start space-y-3">
-            <Image
-              className="object-cover pb-4"
-              src="/logo.png"
-              width={100}
-              height={100}
-              alt=""
-            />
+            <img className="object-cover h-11" src="/logo.png" alt="" />
             <div className="text-sm font-normal text-gray-400">
-              Policies on Smart Insurance is provided <br /> by Shield Brokerage
-              Ghana Ltd.
+              Policies on Smart Insurance are provided <br /> by Shield
+              Insurance Brokers.
             </div>
             <div className="text-base text medium">
-              ©2020 Smart Insurance. All Rights Reserved
+              ©{fullYear} Smart Insurance. All Rights Reserved
             </div>
           </div>
           <div className="footer-third shrink">
@@ -27,10 +23,38 @@ export default function Footer() {
               <div>
                 <b>PRODUCTS</b>
               </div>
-              <div>Motor Insurance</div>
-              <div>Home Insurance</div>
-              <div>Personal Accident</div>
-              <div>Travel Insurance</div>
+              <div>
+                <Link
+                  className="underline hover:text-neutral-600"
+                  href="/products/motor"
+                >
+                  Motor Insurance
+                </Link>
+              </div>
+              <div>
+                <Link
+                  className="underline hover:text-neutral-600"
+                  href={`/products/home`}
+                >
+                  Home Insurance
+                </Link>
+              </div>
+              <div>
+                <Link
+                  className="underline hover:text-neutral-600"
+                  href={`/products/pa`}
+                >
+                  Personal Accident
+                </Link>
+              </div>
+              <div>
+                <Link
+                  className="underline hover:text-neutral-600"
+                  href={`/products/travel`}
+                >
+                  Travel Insurance
+                </Link>
+              </div>
             </div>
           </div>
           <div className="footer-third shrink">
@@ -38,10 +62,25 @@ export default function Footer() {
               <div>
                 <b>COMPANY</b>
               </div>
-              <div>About Us</div>
-              <div>Contact Us</div>
-              <div>Terms</div>
-              <div>Privacy Policy</div>
+              {/* <div>About Us</div>
+              <div>Contact Us</div> */}
+              <div>
+                <a
+                  className="underline"
+                  href="/documents/Terms_and_Conditions.pdf"
+                  download="Terms_and_Conditions.pdf"
+                >
+                  Terms and Conditions
+                </a>
+              </div>
+
+              <a
+                className="underline"
+                href="/documents/Privacy_Policy.pdf"
+                download="Privacy_Policy.pdf"
+              >
+                Privacy Policy
+              </a>
             </div>
           </div>
           <div className="footer-third shrink">
@@ -50,15 +89,13 @@ export default function Footer() {
             </div>
             <div className="txt">
               <div className="flex space-x-1">
-                <Image src="/fb.svg" width={24} height={24} alt="" />
+                <img className="w-6 h-6" src="/fb.svg" alt="" />
                 <span>Twitter</span>
               </div>
               <div className="flex space-x-1">
-                <Image
-                  className="object-cover"
+                <img
+                  className="object-cover w-6 h-6"
                   src="/twitter.svg"
-                  width={24}
-                  height={24}
                   alt=""
                 />
                 <span>Facebook</span>
