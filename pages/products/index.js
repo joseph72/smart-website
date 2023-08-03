@@ -4,29 +4,36 @@ import { products } from "../../insure";
 
 import Link from "next/link";
 
-export default function Products({ item }) {
+export default function Products() {
   return (
-    <div className="max-w-5xl m-auto py-24 px-4 lg:px-0">
-      <div className="text-3xl text-center mb-3 uppercase">{"Products"}</div>
+    <div className=" pt-16">
+      <div className="pa h-56 grid place-content-center">
+        <div className="bg-neutral-900 h-full w-full absolute opacity-60"></div>
+        <h1 className="text-4xl font-semibold text-center mb-3 text-gray-100 uppercase">
+          {"Products"}
+        </h1>
+      </div>
 
-      <div className="grid max-w-md grid-cols-1 gap-6 mx-auto mt-8 lg:mt-16 lg:grid-cols-3 lg:max-w-full">
-        <div className="overflow-hidden bg-white rounded shadow">
+      <div className="m-auto pb-24 px-4 lg:px-0 prose lg:prose-xl"></div>
+      <div className="grid max-w-md pb-24 lg:mx-20 grid-cols-1 gap-6 mx-auto mt-4 lg:mt-4 lg:grid-cols-3 lg:max-w-full ">
+        <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/motor" className="relative">
             <div title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-[13rem] border-b-gray-200 border"
+                className="object-cover w-full h-[13rem] border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
                 src="/motor.jpg"
-                alt=""
+                alt="motor insurance image"
+                loading="lazy"
               />
             </div>
 
-            <div className="p-3">
-              <div className="text-xl font-semibold mt-4">
-                <p title="" className="text-black">
+            <div className="p-3 group-hover:bg-[#b00d0c]">
+              <div className="text-xl font-semibold ">
+                <h5 title="" className="text-black group-hover:text-gray-100">
                   Motor Insurance
-                </p>
+                </h5>
               </div>
-              <span className="text-sm font-normal text-gray-500 line-clamp-2">
+              <span className="text-sm font-normal text-gray-500 line-clamp-2 group-hover:text-gray-50">
                 Our Motor Insurance Policy provides coverage for your legal
                 liabilities towards third parties, as well as protection against
                 damage to your vehicle caused by fire, theft, and other
@@ -57,23 +64,24 @@ export default function Products({ item }) {
             </div>
           </Link>
         </div>
-        <div className="overflow-hidden bg-white rounded shadow">
+        <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/home" className="relative">
             <div title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-[13rem] border-b-gray-200 border"
+                className="object-cover w-full h-[13rem] border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
                 src="/home.jpg"
                 alt=""
+                loading="lazy"
               />
             </div>
 
-            <div className="p-3">
-              <div className="text-xl font-semibold mt-4">
-                <p title="" className="text-black">
+            <div className="p-3 group-hover:bg-[#b00d0c]">
+              <div className="text-xl font-semibold ">
+                <h5 title="" className="text-black group-hover:text-gray-100">
                   Home Insurance
-                </p>
+                </h5>
               </div>
-              <span className="text-sm font-normal text-gray-500 line-clamp-2">
+              <span className="text-sm font-normal text-gray-500 line-clamp-2 group-hover:text-gray-50">
                 Our Home Insurance policy offers comprehensive coverage for any
                 mishaps that may occur within your home due to insured perils
                 such as break-ins, fires, floods, explosions, and more. The
@@ -100,23 +108,24 @@ export default function Products({ item }) {
             </div>
           </Link>
         </div>
-        <div className="overflow-hidden bg-white rounded shadow">
+        <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/travel" className="relative">
             <div title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-[13rem] border-b-gray-200 border"
+                className="object-cover w-full h-[13rem] border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
                 src="/travel.jpg"
                 alt=""
+                loading="lazy"
               />
             </div>
 
-            <div className="p-3">
-              <div className="text-xl font-semibold mt-4">
-                <p title="" className="text-black">
+            <div className="p-3 group-hover:bg-[#b00d0c]">
+              <div className="text-xl font-semibold ">
+                <h5 title="" className="text-black group-hover:text-gray-100">
                   Travel Insurance
-                </p>
+                </h5>
               </div>
-              <span className="text-sm font-normal text-gray-500 line-clamp-2">
+              <span className="text-sm font-normal text-gray-500 line-clamp-2 group-hover:text-gray-50">
                 Traveling, whether for leisure or business, is always filled
                 with excitement and adventure. However, it also comes with the
                 important responsibility of ensuring your safety and security
@@ -136,23 +145,24 @@ export default function Products({ item }) {
             </div>
           </Link>
         </div>
-        <div className="overflow-hidden bg-white rounded shadow">
+        <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/pa" className="relative">
             <div title="" className="block aspect-w-4 aspect-h-3">
               <img
-                className="object-cover w-full h-[13rem] border-b-gray-200 border"
+                className="object-cover w-full h-[13rem] border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
                 src="/personal.jpg"
                 alt=""
+                loading="lazy"
               />
             </div>
 
-            <div className="p-3">
-              <div className="text-xl font-semibold mt-4">
-                <p title="" className="text-black">
+            <div className="p-3 group-hover:bg-[#b00d0c]">
+              <div className="text-xl font-semibold ">
+                <h5 title="" className="text-black group-hover:text-gray-100">
                   Personal Accident Insurance
-                </p>
+                </h5>
               </div>
-              <span className="text-sm font-normal text-gray-500 line-clamp-2">
+              <span className="text-sm font-normal text-gray-500 line-clamp-2 group-hover:text-gray-50">
                 The Personal Accident Policy aims to protect individuals and
                 alleviate the financial burden they may face following an
                 accident. This policy offers compensation in the event of death
@@ -170,14 +180,6 @@ export default function Products({ item }) {
     </div>
   );
 }
-
-export const getStaticProps = async () => {
-  return {
-    props: {
-      item: products,
-    },
-  };
-};
 
 // export async function generateStaticParams() {
 //   const pro = await fetch("../../insure.json").then((res) => res.json());

@@ -2,19 +2,38 @@ import React from "react";
 
 export default function Personal() {
   return (
-    <div className="max-w-5xl m-auto px-4 lg:px-0">
-      <div className="prose lg:prose-xl py-24">
-        <h1 className=" mb-3">Personal Accident Insurance</h1>
-        <p>
-          The Personal Accident Policy aims to protect individuals and alleviate
-          the financial burden they may face following an accident. This policy
-          offers compensation in the event of death or injury, permanent total
-          disablement, temporary total disablement, and medical expenses
-          resulting from accidental, violent, external, and visible causes. In
-          case of death, a lump sum amount is payable. The Personal Accident
-          Insurance provides round-the-clock coverage, 24 hours a day, 7 days a
-          week, and extends its benefits globally.
-        </p>
+    <div className="pt-16">
+      <div className="pa h-56 grid place-content-center">
+        <div className="bg-neutral-900 h-full w-full absolute opacity-60"></div>
+        <h1 className="text-4xl font-semibold text-center mb-3 text-gray-100 uppercase">
+          {"Personal Accident Insurance"}
+        </h1>
+      </div>
+      <div className=" px-4 lg:px-0">
+        <div className="prose lg:prose-xl text-justify py-24  m-auto">
+          <h2 className="text-[#b00d0c]">Personal Accident Insurance Policy</h2>
+          <p>
+            The Personal Accident Policy aims to protect individuals and
+            alleviate the financial burden they may face following an
+            accident.The Policy includes the following coverage:
+            <ul>
+              <li>Compensation in the event of death or injury.</li>
+              <li>
+                permanent total disablement, temporary total disablement, and
+                medical expenses resulting from accidental.
+              </li>
+              <li>violent, external, and visible causes.</li>
+              <li>In case of death, a lump sum amount is payable.</li>
+              <li>
+                Personal Accident Insurance provides round-the-clock coverage.
+              </li>
+              <li>
+                24 hours a day, 7 days a week, and extends its benefits
+                globally.
+              </li>
+            </ul>
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -151,7 +151,7 @@ export default function Main() {
             <div className="policy-grid-items t">
               <div className="m">
                 <img
-                  className="pic1 w-full object-cover h-[450px] w-[450px]"
+                  className="pic1  object-cover h-[450px] w-[450px]"
                   src="/motor.jpg"
                   alt=""
                 />
@@ -206,7 +206,7 @@ export default function Main() {
             <div className="policy-grid-items t">
               <div className="m">
                 <img
-                  className="pic1 w-full object-full w-[450px] w-[450px]"
+                  className="pic1  object-full h-[450px] w-[450px]"
                   src="/home.jpg"
                   alt=""
                 />
