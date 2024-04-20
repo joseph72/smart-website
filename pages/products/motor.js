@@ -10,7 +10,7 @@ export default function Motor() {
         </h1>
       </div>
       <div className=" px-4 lg:px-0">
-        <div className="prose lg:prose-xl text-justify py-24  m-auto">
+        <div className="prose lg:prose-xl text-justify py-24  m-auto max-w-[90%] lg:min-w-[90%]">
           <h2 className=" text-[#b00d0c]">Motor Insurance Policy</h2>
           <p>
             Our Motor Insurance Policy provides coverage for your legal

@@ -10,7 +10,7 @@ export default function Contact() {
         </h1>
       </div>
       <div className=" m-auto">
-        <div className=" prose lg:prose-xl  py-24  m-auto min-w-[70rem]">
+        <div className=" prose lg:prose-xl  py-24  m-auto max-w-[90%] lg:min-w-[90%]">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
             <div className=" shadow-lg ca text-center text-gray-100">
               <div className="bg-neutral-900 h-full w-full absolute opacity-60"></div>

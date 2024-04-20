@@ -32,7 +32,7 @@ export default function Navbar() {
           <div className=" open">
             <img
               onClick={showDrawer}
-              className="w-7 cursor-pointer lg:hidden"
+              className="w-7 cursor-pointer  lg:hidden"
               src="/bars-solid.svg"
               alt=""
             />
@@ -89,12 +89,12 @@ export default function Navbar() {
                 <li className="nav-items">
                   <div className="barrier"></div>
                 </li>
-                <Link href="https://smart-insurance-uat.web.app/login">
+                <Link href="https://app.smartinsurancegh.com/login">
                   <li className="nav-items">
                     <div className="nav-link text-[#b00d0c]">Log In</div>
                   </li>
                 </Link>
-                <Link href="https://smart-insurance-uat.web.app/sign-up">
+                <Link href="https://app.smartinsurancegh.com/sign-up">
                   <li className="nav-items">
                     <div className="nav-link button-3">Sign up</div>
                   </li>
@@ -103,7 +103,7 @@ export default function Navbar() {
             </Drawer>
           </div>
 
-          <ul className="nav-list">
+          <ul className="nav-list hidden lg:flex">
             <div className="menu-icons closed">
               <i className="icon ion-md-close"></i>
             </div>
@@ -153,12 +153,12 @@ export default function Navbar() {
               <div className="barrier"></div>
             </li>
 
-            <Link href="https://smart-insurance-uat.web.app/login">
+            <Link href="https://app.smartinsurancegh.com/login">
               <li className="nav-items">
                 <div className="nav-link text-[#b00d0c]">Log In</div>
               </li>
             </Link>
-            <Link href="https://smart-insurance-uat.web.app/sign-up">
+            <Link href="https://app.smartinsurancegh.com/sign-up">
               <li className="nav-items">
                 <div className="nav-link button-3 hover:!text-gray-50">
                   Sign up

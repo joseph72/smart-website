@@ -18,87 +18,89 @@ export default function Footer() {
               ©{fullYear} Smart Insurance. All Rights Reserved
             </div>
           </div>
-          <div className="footer-third shrink">
-            <div className="txt">
-              <div>
-                <b>PRODUCTS</b>
-              </div>
-              <div>
-                <Link
-                  className="underline hover:text-neutral-600"
-                  href="/products/motor"
-                >
-                  Motor Insurance
-                </Link>
-              </div>
-              <div>
-                <Link
-                  className="underline hover:text-neutral-600"
-                  href={`/products/home`}
-                >
-                  Home Insurance
-                </Link>
-              </div>
-              <div>
-                <Link
-                  className="underline hover:text-neutral-600"
-                  href={`/products/pa`}
-                >
-                  Personal Accident
-                </Link>
-              </div>
-              <div>
-                <Link
-                  className="underline hover:text-neutral-600"
-                  href={`/products/travel`}
-                >
-                  Travel Insurance
-                </Link>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3">
+            <div className="footer-third shrink">
+              <div className="txt">
+                <div>
+                  <b>PRODUCTS</b>
+                </div>
+                <div>
+                  <Link
+                    className=" hover:text-neutral-600"
+                    href="/products/motor"
+                  >
+                    Motor Insurance
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    className=" hover:text-neutral-600"
+                    href={`/products/home`}
+                  >
+                    Home Insurance
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    className=" hover:text-neutral-600"
+                    href={`/products/pa`}
+                  >
+                    Personal Accident
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    className=" hover:text-neutral-600"
+                    href={`/products/travel`}
+                  >
+                    Travel Insurance
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="footer-third shrink">
-            <div className="txt">
-              <div>
-                <b>COMPANY</b>
-              </div>
-              {/* <div>About Us</div>
+            <div className="footer-third shrink">
+              <div className="txt">
+                <div>
+                  <b>COMPANY</b>
+                </div>
+                {/* <div>About Us</div>
               <div>Contact Us</div> */}
-              <div>
+                <div>
+                  <a
+                    className="hover:underline"
+                    href="/documents/Terms_and_Conditions.pdf"
+                    download="Terms_and_Conditions.pdf"
+                  >
+                    Terms and Conditions
+                  </a>
+                </div>
+
                 <a
-                  className="underline"
-                  href="/documents/Terms_and_Conditions.pdf"
-                  download="Terms_and_Conditions.pdf"
+                  className="hover:underline"
+                  href="/documents/Privacy_Policy.pdf"
+                  download="Privacy_Policy.pdf"
                 >
-                  Terms and Conditions
+                  Privacy Policy
                 </a>
               </div>
-
-              <a
-                className="underline"
-                href="/documents/Privacy_Policy.pdf"
-                download="Privacy_Policy.pdf"
-              >
-                Privacy Policy
-              </a>
             </div>
-          </div>
-          <div className="footer-third shrink">
-            <div>
-              <b>FOLLOW US</b>
-            </div>
-            <div className="txt">
-              <div className="flex space-x-1">
-                <img className="w-6 h-6" src="/fb.svg" alt="" />
-                <span>Twitter</span>
+            <div className="footer-third shrink hidden lg:block">
+              <div>
+                <b>FOLLOW US</b>
               </div>
-              <div className="flex space-x-1">
-                <img
-                  className="object-cover w-6 h-6"
-                  src="/twitter.svg"
-                  alt=""
-                />
-                <span>Facebook</span>
+              <div className="txt">
+                <div className="flex space-x-1">
+                  <img className="w-6 h-6" src="/fb.svg" alt="" />
+                  <span>Twitter</span>
+                </div>
+                <div className="flex space-x-1">
+                  <img
+                    className="object-cover w-6 h-6"
+                    src="/twitter.svg"
+                    alt=""
+                  />
+                  <span>Facebook</span>
+                </div>
               </div>
             </div>
           </div>

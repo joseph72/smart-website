@@ -539,7 +539,7 @@ export default function Main() {
             </Link>
             <Link
               className="w-full"
-              href="https://smart-insurance-uat.web.app/login"
+              href="https://app.smartinsurancegh.com/sign-up"
             >
               <button className="button-3 hover:drop-shadow but rounded-full py-2 px-10 text-white bg-[#B00D0C] w-full">
                 Sign up
