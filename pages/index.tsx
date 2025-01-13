@@ -7,14 +7,19 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>Smart Insurance Ghana </title>
         <meta name="description" content="smart Insurance Ghana" />
+        {/* Meta Keywords */}
+        <meta
+          name="keywords"
+          content="Smart Insurance, Smart Insurance Ghana, Mobile Insurance, insurance ghana, fast Insurance, Ghana Insurance, Car Insurance, Travel Insurance, Home Insurance, Personal Accident, Insurance, Insurance Policy, Shield Insurance, Best Insurance, Star Insurance, SIC Insurance"
+        />
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Main />
-      
     </div>
   );
 }

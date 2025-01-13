@@ -533,7 +533,7 @@ export default function Main() {
           <div className="flex flex-col lg:flex-row flex-[1]">
             <Link
               href="/contact"
-              className="button-3 flex place-content-center place-items-center but space-btn hover:drop-shadow !bg-[#F7E6E6] !text-[#B00D0C] rounded-full py-2 px-10 w-full"
+              className="flex place-content-center place-items-center but space-btn hover:bg-red-100 bg-[#F7E6E6] text-[#B00D0C] rounded-full py-2 px-10 w-full"
             >
               Contanct Us
             </Link>
@@ -541,7 +541,7 @@ export default function Main() {
               className="w-full"
               href="https://app.smartinsurancegh.com/sign-up"
             >
-              <button className="button-3 hover:drop-shadow but rounded-full py-2 px-10 text-white bg-[#B00D0C] w-full">
+              <button className="button-3 hover:drop-shadow hover:bg-red-700 but rounded-full py-2 px-10 text-white bg-[#B00D0C] w-full">
                 Sign up
               </button>
             </Link>

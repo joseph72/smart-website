@@ -14,8 +14,11 @@ export default function Footer() {
               Policies on Smart Insurance are provided <br /> by Shield
               Insurance Brokers.
             </div>
-            <div className="text-base text medium">
-              ©{fullYear} Smart Insurance. All Rights Reserved
+            <div className="text-xs text medium ">
+              ©{fullYear} RevAssure Company Limited. All Rights Reserved{" "}
+              <a className="none" href="http://www.revassure.net ">
+                <span className="hover:underline">RevAssure.</span>
+              </a>
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3">
@@ -26,7 +29,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <Link
-                    className=" hover:text-neutral-600"
+                    className=" text-sm hover:text-neutral-600 lg:hover:underline"
                     href="/products/motor"
                   >
                     Motor Insurance
@@ -34,7 +37,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <Link
-                    className=" hover:text-neutral-600"
+                    className=" text-sm hover:text-neutral-600 lg:hover:underline"
                     href={`/products/home`}
                   >
                     Home Insurance
@@ -42,7 +45,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <Link
-                    className=" hover:text-neutral-600"
+                    className=" text-sm hover:text-neutral-600 lg:hover:underline"
                     href={`/products/pa`}
                   >
                     Personal Accident
@@ -50,7 +53,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <Link
-                    className=" hover:text-neutral-600"
+                    className=" text-sm hover:text-neutral-600 lg:hover:underline"
                     href={`/products/travel`}
                   >
                     Travel Insurance
@@ -67,7 +70,7 @@ export default function Footer() {
               <div>Contact Us</div> */}
                 <div>
                   <a
-                    className="hover:underline"
+                    className="text-sm hover:text-neutral-600 lg:hover:underline"
                     href="/documents/Terms_and_Conditions.pdf"
                     download="Terms_and_Conditions.pdf"
                   >
@@ -76,7 +79,7 @@ export default function Footer() {
                 </div>
 
                 <a
-                  className="hover:underline"
+                  className="text-sm hover:text-neutral-600 lg:hover:underline"
                   href="/documents/Privacy_Policy.pdf"
                   download="Privacy_Policy.pdf"
                 >
@@ -89,17 +92,21 @@ export default function Footer() {
                 <b>FOLLOW US</b>
               </div>
               <div className="txt">
-                <div className="flex space-x-1">
+                <div className="flex space-x-[2px]">
                   <img className="w-6 h-6" src="/fb.svg" alt="" />
-                  <span>Twitter</span>
+                  <span className="text-sm hover:text-neutral-600 lg:hover:underline cursor-pointer">
+                    Twitter
+                  </span>
                 </div>
-                <div className="flex space-x-1">
+                <div className="flex space-x-[2px]">
                   <img
                     className="object-cover w-6 h-6"
                     src="/twitter.svg"
                     alt=""
                   />
-                  <span>Facebook</span>
+                  <span className="text-sm hover:text-neutral-600 lg:hover:underline cursor-pointer">
+                    Facebook
+                  </span>
                 </div>
               </div>
             </div>

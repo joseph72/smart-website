@@ -7,6 +7,7 @@ export default function Faq() {
   // const onChange = (key) => {
   //   console.log(key);
   //}
+
   return (
     <div className="pt-16">
       <div className="pa h-56 grid place-content-center">

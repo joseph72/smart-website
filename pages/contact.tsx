@@ -21,9 +21,9 @@ export default function Contact() {
               <div className="bg-neutral-900 h-full w-full absolute opacity-60"></div>
               <h4 className="text-gray-100">Phone</h4>
               <p>
-                +233 50 251 4699 <br />
                 +233 24 227 0895 <br />
-                +233 24 464 4974 <br />
+                +233 54 435 6888 <br />
+                +233 50 251 4699 <br />
               </p>
             </div>
             <div className=" shadow-lg cc text-center text-gray-100">

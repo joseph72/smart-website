@@ -319,7 +319,6 @@ section .head {
   position: relative;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
   z-index: 0;
   color: #515961;
   text-align: center;
@@ -376,7 +375,10 @@ section .head {
   font-weight: 500;
   color: black;
 }
-
+.ant-collapse-header {
+  font-size: 18px;
+  font-weight: 600 !important;
+}
 .contact {
   padding: 1rem;
   background-color: #ffffff;
@@ -562,6 +564,7 @@ section .head {
   text-transform: uppercase;
   font-size: 18px !important;
 }
+
 .back {
   width: 13px;
   height: 9px;
