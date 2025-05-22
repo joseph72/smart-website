@@ -605,7 +605,7 @@ section .head {
   position: relative;
   display: block;
   width: calc(284% + 1.3px);
-  height: 17px;
+  height: 16px;
 }
 .custom-shape-divider-bottom-1592849545 .shape-fill {
   fill: #ffffff;

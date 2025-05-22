@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+import Image from 'next/image';
+
 export default function Footer() {
   const date = new Date();
   const fullYear = date.getFullYear();
@@ -9,7 +11,7 @@ export default function Footer() {
       <footer className="bg-[#F6F6F6] pt-20 pb-8">
         <div className=" px-4 md:px-[5%] flex flex-col text-center md:text-start gap-4 place-items-center md:place-items-start md:flex-row w-full md:gap-16">
           <div className="logo-container grow text-center grid place-items-center md:place-items-start md:text-start space-y-3">
-            <img className="object-cover h-11" src="/logo.png" alt="" />
+            {/* <Image className="object-cover h-11 w-[100px]"  src="/logo.png" alt="" /> */}
             <div className="text-sm font-normal text-gray-400">
               Policies on Smart Insurance are provided <br /> by Shield
               Insurance Brokers.
@@ -93,17 +95,22 @@ export default function Footer() {
               </div>
               <div className="txt">
                 <div className="flex space-x-[2px]">
-                  <img className="w-6 h-6" src="/fb.svg" alt="" />
+                  <div className="w-6 h-6">
+                  <Image fill src="/fb.svg" alt="" />
+                  </div>
+                 
                   <span className="text-sm hover:text-neutral-600 lg:hover:underline cursor-pointer">
                     Twitter
                   </span>
                 </div>
                 <div className="flex space-x-[2px]">
-                  <img
+                  <div className="w-6 h-6">
+                  <Image
                     className="object-cover w-6 h-6"
                     src="/twitter.svg"
                     alt=""
-                  />
+                    fill
+                  /></div>
                   <span className="text-sm hover:text-neutral-600 lg:hover:underline cursor-pointer">
                     Facebook
                   </span>

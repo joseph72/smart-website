@@ -288,9 +288,9 @@ export default function Faq() {
                     questions or require assistance, please do not hesitate to
                     reach out to our support team. <br />
                     Email: support@smartinsurancegh.com <br />
-                    Phone: +233 50 251 4699 <br />
-                    +233 24 227 0895 <br />
-                    +233 24 464 4974 <br />
+                    Phone:  +233 54 435 6888 <br />
+                            +233 54 571 8278 <br />
+                            +233 54 571 8278 <br />
                     Address: 113A Mbabane Avenue, East Legon - Accra
                   </p>
                 ),

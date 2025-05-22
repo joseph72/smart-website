@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { products } from "../../insure";
 
 import Link from "next/link";
+import Image from 'next/image'
 
 export default function Products() {
   return (
@@ -18,12 +19,13 @@ export default function Products() {
       <div className="grid max-w-md pb-24 lg:mx-20 grid-cols-1 gap-6 mx-auto mt-4 lg:mt-4 lg:grid-cols-3 lg:max-w-full ">
         <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/motor" className="relative">
-            <div title="" className="block aspect-w-4 aspect-h-3">
-              <img
-                className="object-cover w-full h-[13rem] border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
+            <div title="" className="block aspect-w-4 aspect-h-3 h-[13rem]">
+              <Image
+                className="object-cover w-full  border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
                 src="/motor.jpg"
                 alt="motor insurance image"
                 loading="lazy"
+                 fill
               />
             </div>
 
@@ -66,12 +68,13 @@ export default function Products() {
         </div>
         <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/home" className="relative">
-            <div title="" className="block aspect-w-4 aspect-h-3">
-              <img
-                className="object-cover w-full h-[13rem] border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
+            <div title="" className="block aspect-w-4 aspect-h-3 h-[13rem]">
+              <Image
+                className="object-cover w-full  border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
                 src="/home.jpg"
                 alt=""
                 loading="lazy"
+                fill
               />
             </div>
 
@@ -110,12 +113,13 @@ export default function Products() {
         </div>
         <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/travel" className="relative">
-            <div title="" className="block aspect-w-4 aspect-h-3">
-              <img
-                className="object-cover w-full h-[13rem] border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
+            <div title="" className="block aspect-w-4 aspect-h-3 h-[13rem]">
+              <Image
+                className="object-cover w-full  border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
                 src="/travel.jpg"
                 alt=""
                 loading="lazy"
+                fill
               />
             </div>
 
@@ -147,12 +151,13 @@ export default function Products() {
         </div>
         <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/pa" className="relative">
-            <div title="" className="block aspect-w-4 aspect-h-3">
-              <img
-                className="object-cover w-full h-[13rem] border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
+            <div title="" className="block aspect-w-4 aspect-h-3 h-[13rem]">
+              <Image
+                className="object-cover w-full  border-b-gray-200 border transition duration-300 ease-in-out group-hover:scale-110"
                 src="/personal.jpg"
                 alt=""
                 loading="lazy"
+                fill
               />
             </div>
 

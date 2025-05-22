@@ -3,6 +3,7 @@ import { Carousel } from "antd";
 import { data } from "../db";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function Main() {
   const router = useRouter();
@@ -111,16 +112,28 @@ export default function Main() {
         <div className=" md:pl-[3%] md:pb-6">
           <div className="hidden md:absolute lg:flex space-x-4 items-center -top-20 right-[6.5%]">
             <div
-              className="p-4 hover:bg-slate-100 cursor-pointer rounded-full"
+              className="p-4 hover:bg-slate-100 cursor-pointer rounded-full w-[60px] h-[60px]"
               onClick={moveScrollLeft}
             >
-              <img className="w-7 h-7" src="/left-hook.svg" alt="" />
+              <Image
+                className=" h-7 w-7"
+                width={28}
+                height={28}
+                src="/left-hook.svg"
+                alt=""
+              />
             </div>
             <div
-              className="p-4 hover:bg-slate-100 cursor-pointer rounded-full"
+              className="p-4 hover:bg-slate-100 cursor-pointer rounded-full w-[60px] h-[60px]"
               onClick={moveScrollRight}
             >
-              <img className="w-7 h-7" src="/right-hook.svg" alt="" />
+              <Image
+                className=" h-7 w-7"
+                width={28}
+                height={28}
+                src="/right-hook.svg"
+                alt=""
+              />
             </div>
           </div>
           <div id="scroll" className="alpha scrollbar-hide">
@@ -130,10 +143,12 @@ export default function Main() {
                   key={item.id}
                   className="pane shadow-1 w-44 flex place-content-center"
                 >
-                  <img
-                    className="rolling-logo object-cover w-[100px] h-[100px]"
+                  <Image
+                    className="rolling-logo object-cover "
                     src={item.img}
                     alt={item.alt}
+                    width={100}
+                    height={100}
                   />
                 </div>
               ))}
@@ -149,11 +164,13 @@ export default function Main() {
           </div>
           <div className="policy-grid px-4 md:px-[5%]">
             <div className="policy-grid-items t">
-              <div className="m">
-                <img
-                  className="pic1  object-cover h-[450px] w-[450px]"
+              <div className="m ">
+                <Image
+                  className="pic1  object-cover "
                   src="/motor.jpg"
                   alt=""
+                  width={450}
+                  height={450}
                 />
                 <div className="overlay"></div>
                 <div className="custom-shape-divider-bottom-1592849545 mt mk bottom-0">
@@ -194,21 +211,27 @@ export default function Main() {
                 >
                   <div className="flex space-x-3 items-center">
                     <span>Learn More</span>
-                    <img
-                      className="back w-[100px] h-[100px]"
-                      src="/back.png"
-                      alt=""
-                    />
+                    <div className="">
+                      <Image
+                        className="back "
+                        src="/back.png"
+                        alt=""
+                        width={100}
+                        height={100}
+                      />
+                    </div>
                   </div>
                 </button>
               </div>
             </div>
             <div className="policy-grid-items t">
-              <div className="m">
-                <img
-                  className="pic1  object-full h-[450px] w-[450px]"
+              <div className="m ">
+                <Image
+                  className="pic1  object-full "
                   src="/home.jpg"
                   alt=""
+                  width={450}
+                  height={450}
                 />
                 <div className="overlay"></div>
                 <div className="custom-shape-divider-bottom-1592849545 mt mk bottom-0">
@@ -250,7 +273,8 @@ export default function Main() {
                 >
                   <div className="flex space-x-3 items-center">
                     <span>Learn More</span>
-                    <img
+                    <div></div>
+                    <Image
                       className="back"
                       width={100}
                       height={100}
@@ -263,7 +287,7 @@ export default function Main() {
             </div>
             <div className="policy-grid-items t">
               <div className="m">
-                <img
+                <Image
                   className="pic1 w-full object-cover"
                   width={450}
                   height={450}
@@ -308,7 +332,7 @@ export default function Main() {
                 >
                   <div className="flex space-x-3 items-center">
                     <span>Learn More</span>
-                    <img
+                    <Image
                       className="back"
                       width={100}
                       height={100}
@@ -321,7 +345,7 @@ export default function Main() {
             </div>
             <div className="policy-grid-items t">
               <div className="m">
-                <img
+                <Image
                   className="pic1 w-full object-cover"
                   width={450}
                   height={450}
@@ -367,7 +391,7 @@ export default function Main() {
                 >
                   <div className="flex space-x-3 items-center">
                     <span>Learn More</span>
-                    <img
+                    <Image
                       className="back"
                       width={100}
                       height={100}
@@ -389,7 +413,7 @@ export default function Main() {
         <div className="why-grid">
           <div className="why-grid-items">
             <div className="flex place-content-center md:place-content-start">
-              <img
+              <Image
                 className="w-[49px]"
                 width={100}
                 height={100}
@@ -410,13 +434,23 @@ export default function Main() {
             </div>
             <div className="momo-grid">
               <div className="momo-grid-items">
-                <img width={100} height={100} src="/atm-coloured.png" alt="" />
+                <Image
+                  width={100}
+                  height={100}
+                  src="/atm-coloured.png"
+                  alt=""
+                />
               </div>
               <div className="momo-grid-items">
-                <img width={100} height={100} src="/mtn-coloured.png" alt="" />
+                <Image
+                  width={100}
+                  height={100}
+                  src="/mtn-coloured.png"
+                  alt=""
+                />
               </div>
               <div className="momo-grid-items">
-                <img
+                <Image
                   width={100}
                   height={100}
                   src="/vf-cash-coloured.png"
@@ -428,7 +462,7 @@ export default function Main() {
           </div>
           <div className="why-grid-items">
             <div className="flex place-content-center md:place-content-start">
-              <img
+              <Image
                 width={100}
                 height={100}
                 className="w-[49px]"
@@ -448,7 +482,7 @@ export default function Main() {
             </div>
 
             <div className="instant-insure flex -space-x-4 items-center">
-              <img
+              <Image
                 className="w-10 h-10 rounded-full"
                 width={16}
                 height={16}
@@ -456,7 +490,7 @@ export default function Main() {
                 alt="star icon"
               />
 
-              <img
+              <Image
                 className="w-10 h-10 rounded-full"
                 width={16}
                 height={16}
@@ -464,7 +498,7 @@ export default function Main() {
                 alt="hollard icon"
               />
 
-              <img
+              <Image
                 className="w-10 h-10 rounded-full"
                 width={16}
                 height={16}
@@ -472,7 +506,7 @@ export default function Main() {
                 alt="mi-life icon"
               />
 
-              <img
+              <Image
                 className="w-10 h-10 rounded-full"
                 width={16}
                 height={16}
@@ -486,7 +520,7 @@ export default function Main() {
           </div>
           <div className="why-grid-items">
             <div className="flex place-content-center md:place-content-start">
-              <img
+              <Image
                 width={16}
                 height={16}
                 className="w-[49px]"
@@ -506,7 +540,7 @@ export default function Main() {
 
             <div className="instant-insure">
               <span>
-                <img
+                <Image
                   width={16}
                   height={16}
                   className="w-[37px]"
@@ -535,7 +569,7 @@ export default function Main() {
               href="/contact"
               className="flex place-content-center place-items-center but space-btn hover:bg-red-100 bg-[#F7E6E6] text-[#B00D0C] rounded-full py-2 px-10 w-full"
             >
-              Contanct Us
+              Contact Us
             </Link>
             <Link
               className="w-full"

@@ -4,6 +4,7 @@ import { Button, Drawer } from "antd";
 import logo from "../public/logo.svg";
 import bar from "../public/bars-solid.svg";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -24,17 +25,24 @@ export default function Navbar() {
         <nav>
           <div className="nav-brand">
             <Link href="/">
-              <div className="logo">
-                <img className="object-contain   h-11" src="/logo.png" alt="" />
+              <div className="logo h-11 w-full">
+                <Image
+                  loading="lazy"
+                  className="object-contain "
+                  fill
+                  src="/logo.png"
+                  alt="Logo"
+                />
               </div>
             </Link>
           </div>
-          <div className=" open">
-            <img
+          <div className=" open w-7 h-7">
+            <Image
               onClick={showDrawer}
-              className="w-7 cursor-pointer  lg:hidden"
+              className=" cursor-pointer  lg:hidden"
               src="/bars-solid.svg"
               alt=""
+              fill
             />
             <Drawer placement="left" onClose={onClose} open={open}>
               <ul className="">

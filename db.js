@@ -6,7 +6,7 @@ export const data = [
   },
   {
     id: 2,
-    img: "/insurance/Allianz.png",
+    img: "/insurance/impact.png",
     alt: "insurance-image",
   },
   {
@@ -106,12 +106,12 @@ export const data = [
   },
   {
     id: 22,
-    img: "/insurance/Saham_Ghana.png",
+    img: "/insurance/Sanlam_Alliance.png",
     alt: "insurance-image",
   },
   {
     id: 23,
-    img: "/insurance/sanlam.png",
+    img: "/insurance/coronation.png",
     alt: "insurance-image",
   },
   {
@@ -146,7 +146,7 @@ export const data = [
   },
   {
     id: 30,
-    img: "/insurance/wapic.png",
+    img: "/insurance/Bedrock.png",
     alt: "insurance-image",
   },
 ];
