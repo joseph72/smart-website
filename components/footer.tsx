@@ -8,10 +8,13 @@ export default function Footer() {
   const fullYear = date.getFullYear();
   return (
     <div>
-      <footer className="bg-[#F6F6F6] pt-20 pb-8">
+      <footer className="bg-[#F6F6F6] pt-10 pb-8">
         <div className=" px-4 md:px-[5%] flex flex-col text-center md:text-start gap-4 place-items-center md:place-items-start md:flex-row w-full md:gap-16">
           <div className="logo-container grow text-center grid place-items-center md:place-items-start md:text-start space-y-3">
-            {/* <Image className="object-cover h-11 w-[100px]"  src="/logo.png" alt="" /> */}
+            <div className="h-[36px] w-[100px]">
+              <Image className="object-cover " fill  src="/logo.png" alt="" />
+            </div>
+            
             <div className="text-sm font-normal text-gray-400">
               Policies on Smart Insurance are provided <br /> by Shield
               Insurance Brokers.

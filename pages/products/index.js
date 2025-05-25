@@ -15,8 +15,8 @@ export default function Products() {
         </h1>
       </div>
 
-      <div className="m-auto pb-24 px-4 lg:px-0 prose lg:prose-xl"></div>
-      <div className="grid max-w-md pb-24 lg:mx-20 grid-cols-1 gap-6 mx-auto mt-4 lg:mt-4 lg:grid-cols-3 lg:max-w-full ">
+      <div className="m-auto pb-24 x-4 lg:px-0 prose lg:prose-xl"></div>
+      <div className="grid max-w-md pb-24 lg:mx-20 grid-cols-1 gap-6 mx-4 mt-4 lg:mt-4 lg:grid-cols-3 lg:max-w-full ">
         <div className="overflow-hidden bg-white rounded shadow group">
           <Link href="/products/motor" className="relative">
             <div title="" className="block aspect-w-4 aspect-h-3 h-[13rem]">
